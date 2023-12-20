@@ -1,8 +1,12 @@
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 1rem;
   padding: 1rem;
+}
 
+main {
+  max-width: 1380px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -14,7 +18,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 400;
 }
 
@@ -22,7 +26,6 @@ h3 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
 }
 
 .reunion-car-row div {
@@ -41,12 +44,9 @@ p span {
   text-decoration: black underline;
 }
 
-
-
 /* Buttons section */
 
 .link-buttons {
-
   display: flex;
   max-width: 800px;
   justify-content: space-between;
@@ -64,7 +64,7 @@ p span {
   transition: background-color 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   margin-right: 10px;
-  text-align:  center;
+  text-align: center;
 }
 
 .link-buttons a:hover {
@@ -74,23 +74,20 @@ p span {
 /* tablet queries */
 
 @media (max-width: 768px) {
-
   .link-buttons a {
-    width: 10rem;
+    width: calc(50% - 5px);
     margin: 10px auto;
   }
+  
 
   .reunion-car-row div {
     flex: 0 0 calc(50% - 10px);
   }
-
 }
-
 
 /* cellphone queries */
 
 @media (max-width: 480px) {
-
   .link-buttons {
     flex-direction: column;
   }
